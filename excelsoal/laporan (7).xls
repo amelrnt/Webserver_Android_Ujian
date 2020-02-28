@@ -1,0 +1,1144 @@
+<table border="1">
+	<tr>
+		<td>ID</td>
+		<td>SOAL</td>
+		<td>PIL A</td>
+		<td>PIL B</td>
+		<td>PIL C</td>
+		<td>PIL D</td>
+		<td>JAWABAN</td>
+		<td>PAKET</td>
+	</tr>
+
+
+<tr>
+	<td>1</td>
+	<td>Internet adalah</td>
+	<td>Adalah kumpulan dari berbagai jaringan komputer yang saling interko</td>
+	<td>Adalah kumpulan dari berbagai jaringan komputer yang saling interkonek</td>
+	<td>Adalah kumpulan dari berbagai jaringan komputer yang saling interkoneksi yang mencakup jaringan interl</td>
+	<td>Adalah kumpulan dari berbagai jaringan komputer yang saling interkoneksi yang mencakup jaringan local dan </td>
+	<td>0</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>2</td>
+	<td>WWW adalah singkatan dari.</td>
+	<td>World Wide Web</td>
+	<td>World Web Wide</td>
+	<td>Web World Wide </td>
+	<td>Web Wide World </td>
+	<td>0</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>3</td>
+	<td>Standar yang digunakan untuk membentuk web...</td>
+	<td>URL, HTTP, HTML</td>
+	<td>WWW, HTTP, HTML</td>
+	<td>URL, WWW, HTML</td>
+	<td>URL, HTTP, WWW</td>
+	<td>0</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>4</td>
+	<td>Website yang kontennya tidak perlu dilakukan perubahan dan perawatan dilakukan secara manual oleh seseorang termasuk jenis ..</td>
+	<td>Website Otomatis </td>
+	<td>Website Dinamis</td>
+	<td>Website Statis</td>
+	<td>Website semi Dinamis</td>
+	<td>2</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>5</td>
+	<td>Konfigurasi sambungan ke internet secara garis besar adalah ...</td>
+	<td>Internet  modem  komputer</td>
+	<td>Modem  komputer  internet</td>
+	<td>Router  modem  internet</td>
+	<td>Komputer  modem  internet</td>
+	<td>3</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>6</td>
+	<td>Ada beberapa cara popular yang digunakan untuk menata website, kecuali..</td>
+	<td>Sequential organization</td>
+	<td>Hierarchical organization </td>
+	<td>Kombinasi Sequential organization dan web organization</td>
+	<td>Web organization </td>
+	<td>2</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>7</td>
+	<td>Website yang memberikan informasi yang ada terbatasi hanya sekitar satu topik tertentu adalah kategori...</td>
+	<td>Personal home page </td>
+	<td>Company Web Site </td>
+	<td>Special Interest Web Site </td>
+	<td>Standart Website</td>
+	<td>2</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>8</td>
+	<td>Gambar dibawah ini termasuk penataan Website model..</td>
+	<td>Sequential organization </td>
+	<td>Hierarchical organization </td>
+	<td>Kombinasi Sequential dan Hierarchical organization </td>
+	<td>Web organization </td>
+	<td>3</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>9</td>
+	<td>Apa kepanjangan dari HTML?</td>
+	<td>Hyper text mail language </td>
+	<td>Hyper team mode language</td>
+	<td>Hyper text mark up language </td>
+	<td>Hyper team master language</td>
+	<td>2</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>10</td>
+	<td>Bagaimana perintah membuat text menjadi berwarna ?</td>
+	<td><font color=color> </td>
+	<td><td background=url></td>
+	<td><bgcolor = color> </td>
+	<td><p align =center></td>
+	<td>0</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>11</td>
+	<td>Untuk membangun halaman HTML sederhana, Anda dapat menggunakan ...</td>
+	<td>Excel</td>
+	<td>Frame</td>
+	<td>Winamp</td>
+	<td>Notepad</td>
+	<td>3</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>12</td>
+	<td>Untuk menambahkan bakcground gambar pada sebuah halaman web, kita dapat menggunakan tag </td>
+	<td>Backsong</td>
+	<td>Backsound</td>
+	<td>Background</td>
+	<td>Backsing</td>
+	<td>1</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>13</td>
+	<td>Tag ini digunakan untuk memberikan judul pada title bar window. Tag ini berada pada tag  head. Tag ini adalah </td>
+	<td>Head</td>
+	<td>Body</td>
+	<td>Frame</td>
+	<td>Title</td>
+	<td>3</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>14</td>
+	<td>Tag ini ditulis setelah tag HTML. Tag ini berfungsi untuk menuliskan keterangan tentang dokumen web yang ditampilkan. Tag ini adalah </td>
+	<td>Head</td>
+	<td>Title</td>
+	<td>Body</td>
+	<td>Table</td>
+	<td>0</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>15</td>
+	<td>Perintah untuk mengatur huruf miring pada HTML adalah ..</td>
+	<td><i></td>
+	<td><a></td>
+	<td><b></td>
+	<td><u></td>
+	<td>0</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>21</td>
+	<td>Sebuah alamat pada komputer agar komputer bisa saling terhubung dengan komputer lain disebut dengan...</td>
+	<td>IP Address</td>
+	<td>Broadcast Address</td>
+	<td>Netmask/Subnet Mask</td>
+	<td>Gateway</td>
+	<td>0</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>22</td>
+	<td>IPv 4 Terdiri dari...</td>
+	<td> Net ID & Host ID</td>
+	<td>Kode Vendor & Kode Hardware</td>
+	<td>Broadcast & Netmask</td>
+	<td>FLSM & VLSM</td>
+	<td>0</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>23</td>
+	<td>IPv4 terdiri dari berapa Byte dan bit .....</td>
+	<td>40 bit & 32 Byte</td>
+	<td>48 Byte & 6 bit</td>
+	<td>4 Byte & 32 bit</td>
+	<td>6 Byte & 32 bit</td>
+	<td>2</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>24</td>
+	<td>CSS merupakan kepanjangan dari.... </td>
+	<td>Cascading Select Sheet</td>
+	<td>Cascading Style Sheet</td>
+	<td>Case Style Sheet</td>
+	<td>Cascading Sensitive Sheet</td>
+	<td>1</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>25</td>
+	<td>Macam-macam pembuatan dan pengaturan dalam CSS, kecuali ...</td>
+	<td>Style font</td>
+	<td>Style warna</td>
+	<td>Style jarak</td>
+	<td>Style jenis</td>
+	<td>3</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>26</td>
+	<td>Selector yaitu ...</td>
+	<td>Bagian elemen HTML untuk mengatur style</td>
+	<td>Aturan dalam CSS untuk mengubah value yang dipilih</td>
+	<td>Sebuah property yang berada didalam tanda { }</td>
+	<td>Dapat berupa class dan value</td>
+	<td>0</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>27</td>
+	<td>Di bawah ini manfaat penggunaan dari CSS dalam pembuatan web, kecuali ...</td>
+	<td>Kode HTML menjadi lebih sederhana</td>
+	<td>Kapasitas penyimpanan menjadi lebih besar, sehingga load lebih mudah</td>
+	<td>Mudah untuk mengubah tampilan</td>
+	<td>Dapat digunakan semua jenis web browser</td>
+	<td>1</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>30</td>
+	<td>Susunan kabel UTP yang benar untuk mengkoneksikan network card suatu PC ke hub adalah:</td>
+	<td>straight</td>
+	<td>crossover</td>
+	<td>rollover</td>
+	<td>coax</td>
+	<td>0</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>31</td>
+	<td>Metode transmisi sinyal yang tidak terpengaruh noise / interferensi gelombang elektromagnet adalah:</td>
+	<td>wireless</td>
+	<td>akustik</td>
+	<td>optik</td>
+	<td>elektrik</td>
+	<td>1</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>32</td>
+	<td>Pada LAN, konektor yang digunakan untuk terminasi kabel coaxial adalah:</td>
+	<td>BNC</td>
+	<td>RJ-11</td>
+	<td>RJ-45</td>
+	<td>Tipe-F</td>
+	<td>2</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>33</td>
+	<td>Yang digunakan sebagai penghasil cahaya pada fiber optik multimode adalah:</td>
+	<td>LED</td>
+	<td>laser</td>
+	<td>dop</td>
+	<td>neon</td>
+	<td>0</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>34</td>
+	<td>Pengukuran transfer data yang hanya memperhitungkan data yang terpakai aplikasi adalah pengukuran:</td>
+	<td>bandwidth</td>
+	<td>throughput</td>
+	<td>goodput</td>
+	<td>transfer-ratio </td>
+	<td>0</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>35</td>
+	<td>Port-port yang termasuk dalam grup Well-known ports adalah:</td>
+	<td>port 0  1023</td>
+	<td>port 1024  49151</td>
+	<td>port 49152  65535</td>
+	<td>semua port</td>
+	<td>1</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>36</td>
+	<td>Proses pada Lapisan Network yang bertugas mengkonversi segmet dari lapisan transport menjadi paket data unit baru khusus lapisan Network adalah:</td>
+	<td>pengalamatan</td>
+	<td>enkapsulasi</td>
+	<td>routing</td>
+	<td>dekapsulasi</td>
+	<td>2</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>37</td>
+	<td>Informasi apa yang dapat ditemukan pada header protokol TCP maupun UDP?</td>
+	<td>sequence number </td>
+	<td>acknowledgment   </td>
+	<td>flow control</td>
+	<td>source dan destination</td>
+	<td>3</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>38</td>
+	<td>Port-port yang termasuk dalam grup Registered Ports adalah:</td>
+	<td>port 0  1023</td>
+	<td>port 1024  49151</td>
+	<td>port 49152  65535</td>
+	<td>semua port</td>
+	<td>0</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>39</td>
+	<td>Proses pada Lapisan Network yang bertugas merubah paket data unit kembali menjadi segmen untuk diberikan kepada Lapisan Transport adalah:</td>
+	<td>pengalamatan</td>
+	<td>enkapsulasi</td>
+	<td>routing</td>
+	<td>dekapsulasi</td>
+	<td>1</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>40</td>
+	<td>Mekanisme yang digunakan TCP untuk menyediakan fungsi flow control saat pengiriman segmen dari host asal ke host tujuan?</td>
+	<td>sequence number</td>
+	<td>pembuatan session</td>
+	<td>window size</td>
+	<td>acknowledgment</td>
+	<td>2</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>41</td>
+	<td>Dibandingkan dengan SSH, kelemahan utama penggunaan dari telnet adalah:</td>
+	<td>tidak umum digunakan</td>
+	<td>tidak mendukung enkripsi</td>
+	<td>menghabiskan lebih banyak bandwidth</td>
+	<td>tidak mendukung proses otentikasi</td>
+	<td>3</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>42</td>
+	<td>Protokol yang mendukung perpindahan file antara klien dan server adalah:</td>
+	<td>HTML</td>
+	<td>HTTP</td>
+	<td>FTP</td>
+	<td>Telnet</td>
+	<td>0</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>43</td>
+	<td>Servis dari lapisan datalink yang mengatur bagaimana data ditempatkan pada suatu jaringan adalah?</td>
+	<td>framing</td>
+	<td>error detection</td>
+	<td>media access control</td>
+	<td>flow control</td>
+	<td>1</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>44</td>
+	<td>Pada bagian frame yang mana informasi untuk mendeteksi error suatu frame dapat ditemukan?</td>
+	<td>data</td>
+	<td>frame</td>
+	<td>header</td>
+	<td>trailer</td>
+	<td>2</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>45</td>
+	<td>Susunan kabel UTP yang benar untuk mengkoneksikan network card suatu PC ke network card PC lain adalah:</td>
+	<td>straight</td>
+	<td>crossover</td>
+	<td>rollover</td>
+	<td>coax</td>
+	<td>0</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>46</td>
+	<td>Yang digunakan sebagai penghasil cahaya pada fiber optik single-mode adalah:</td>
+	<td>LED</td>
+	<td>laser</td>
+	<td>dop</td>
+	<td>neon</td>
+	<td>1</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>47</td>
+	<td>Method yang digunakan untuk mengubah panjang data StringBuffer adalah </td>
+	<td>length()</td>
+	<td>setLength()</td>
+	<td>Changelength()</td>
+	<td>reverse()</td>
+	<td>0</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>48</td>
+	<td>Diantara perintah untuk mencetak berikut, yang benar adalah ..</td>
+	<td>System.out.println(Mid Java)</td>
+	<td>System.Out.println(Mid Java )</td>
+	<td>System.out.Println(Mid Java )</td>
+	<td>System.Out.Println(Mid Java )</td>
+	<td>1</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>49</td>
+	<td>Fungsi method System.in dalam java adalah</td>
+	<td>Mengirimkan keluaran ke layar</td>
+	<td>Menangani pembacaan dari keyboard</td>
+	<td>Menampilkan pesan kesalahan</td>
+	<td>Menangani suatu objek</td>
+	<td>2</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>50</td>
+	<td>Arsitektur java yang dipakai untuk wireless device / mobile device, disebut dengan</td>
+	<td>J2SE</td>
+	<td>J2ME</td>
+	<td>J2EE</td>
+	<td>J2EM</td>
+	<td>3</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>51</td>
+	<td>Diantara pernyataan berikut, konsep yang tidak ada di dalam pemrograman Java adalah</td>
+	<td>Polymorphisme</td>
+	<td>Encapsulation</td>
+	<td>Multiple inheritance</td>
+	<td>Single Inheritance</td>
+	<td>0</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>52</td>
+	<td>Diantara pernyataan berikut, penulisan sintaks BbufferredReader yang benar adalah...</td>
+	<td>int data =BufferedReader = new BufferedReader(new input Stream Read</td>
+	<td>int data =BufferedReader = new BufferedReader(new InputStreamReader(Sy</td>
+	<td>int data=(new Integer((new BufferedReader = new BufferedReader(new input Stream Reader(System.in))).re</td>
+	<td>int data = (new Integer( (new BufferedReader (new InputStreamReader (System.in))).readLine()).intValue());</td>
+	<td>1</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>53</td>
+	<td>Berikut ini yang termasuk tipe data reference adalah</td>
+	<td>float</td>
+	<td>character</td>
+	<td>short</td>
+	<td>int</td>
+	<td>2</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>54</td>
+	<td>Berikut ini adalah keyword yang terdapat dalam Java, kecuali...</td>
+	<td>Goto</td>
+	<td>Break</td>
+	<td>If</td>
+	<td>String</td>
+	<td>3</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>55</td>
+	<td>Komentar program dalam Java dapat menggunakan perintah...</td>
+	<td>/*...*/ saja</td>
+	<td>// saja</td>
+	<td>// dan /*..*/</td>
+	<td>#, // dan /*..*/</td>
+	<td>0</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>56</td>
+	<td>Berikut ini pernyataan yang benar berhubungan dengan class dan object dalam Java, kecuali...</td>
+	<td>Setiap class dapat mengandung beberapa method sekaligus</td>
+	<td>Object merupakan instance dari class</td>
+	<td>Object terdiri dari keyword dan method</td>
+	<td>Class merupakan pendefinisian dari object</td>
+	<td>1</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>57</td>
+	<td>Suatu method yang dapat dijalankan otomatis pada saat object dari class dibuat, dikenal dengan ...</td>
+	<td>Constructor</td>
+	<td>Initializer</td>
+	<td>Garbage Collector</td>
+	<td>Inheritance</td>
+	<td>2</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>58</td>
+	<td>Berikut ini adalah pernyataan yang benar berhubungan dengan break dan continue, kecuali...</td>
+	<td>Break digunakan untuk keluar dari blok perulangan</td>
+	<td>Continue digunakan untuk melanjutkan ke proses perulangan berikutnya</td>
+	<td>Statement setelah continue tidak akan dijalankan</td>
+	<td>Statement setelah break tetap akan dijalankan</td>
+	<td>2</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>59</td>
+	<td>Method yang digunakan untuk mengambil sub-string yang dimulai dari posisi tertentu sampai akhir string adalah</td>
+	<td>charAt(int1,Int2)</td>
+	<td>substring(int)</td>
+	<td>substring(int1, int2)</td>
+	<td>charAt(int)</td>
+	<td>3</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>60</td>
+	<td>Sintaks java untuk melakukan kompilasi terhadap berkas program adalah :</td>
+	<td>java</td>
+	<td>javac</td>
+	<td>javaclass</td>
+	<td>javax</td>
+	<td>3</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>61</td>
+	<td>Hasil kompilasi dari berkas java adalah</td>
+	<td>File BAK</td>
+	<td>File Bytecode</td>
+	<td>File executable</td>
+	<td>File class</td>
+	<td>0</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>62</td>
+	<td>Atribut kelas hanya dapat diakses oleh metode dalam kelas disebut ...</td>
+	<td>Private</td>
+	<td>Protected</td>
+	<td>Default</td>
+	<td>Public</td>
+	<td>1</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>63</td>
+	<td>Package yang digunakan untuk kelas komponen GUI, adalah ...</td>
+	<td>Java.io</td>
+	<td>Java.lang</td>
+	<td>Javax.swing</td>
+	<td>Java.applet</td>
+	<td>3</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>64</td>
+	<td>Instruksi untuk mengkompile class java menjadi package, adalah</td>
+	<td>javac d <directory_target> <nama_file_java></td>
+	<td>javac <directory_target> <nama_file_java></td>
+	<td>javac d <nama_file_java> <directory_target></td>
+	<td>javac d <directory_target></td>
+	<td>1</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>65</td>
+	<td>Perintah untuk compile di java adalah</td>
+	<td>Javac nm_file</td>
+	<td>Javac nm_class</td>
+	<td>Java nm_class</td>
+	<td>Java nm_file</td>
+	<td>2</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>66</td>
+	<td>Method untuk mengembalikan nilai integer saat ini kedalam bentuk pecahan, adalah</td>
+	<td>intValue</td>
+	<td>doubleValue</td>
+	<td>intDouble</td>
+	<td>doubleInteger</td>
+	<td>1</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>67</td>
+	<td>Dalam bahasa pemrograman C++ untuk membuat komentar satu baris menggunakan:</td>
+	<td>//</td>
+	<td>||</td>
+	<td>\\</td>
+	<td>{}</td>
+	<td>0</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>68</td>
+	<td>Dalam bahasa pemrograman C++ untuk membuat komentar lebih dari satu baris menggunakan:</td>
+	<td>//</td>
+	<td>||</td>
+	<td>\\</td>
+	<td>/*...*/</td>
+	<td>3</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>69</td>
+	<td>Untuk mendeklarasiksan variabel dalam bahasa pemrograman C++ yaitu </td>
+	<td>int a,b;</td>
+	<td>int 1;</td>
+	<td>int a;b;</td>
+	<td>char a<3></td>
+	<td>0</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>70</td>
+	<td>adad</td>
+	<td>a</td>
+	<td>vdvd</td>
+	<td>wdw</td>
+	<td>axa</td>
+	<td></td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>71</td>
+	<td>sfdsds</td>
+	<td>dvdfv</td>
+	<td>vfvf</td>
+	<td>rwr</td>
+	<td>daa</td>
+	<td>2</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>72</td>
+	<td>sadcsa</td>
+	<td>sfs</td>
+	<td>sdvs</td>
+	<td>scvs</td>
+	<td>scs</td>
+	<td>2</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>75</td>
+	<td>scac</td>
+	<td>dv</td>
+	<td>dvdv</td>
+	<td>ad</td>
+	<td>d</td>
+	<td>2</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>76</td>
+	<td>scac</td>
+	<td>dv</td>
+	<td>dvdv</td>
+	<td>ad</td>
+	<td>d</td>
+	<td>2</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>77</td>
+	<td>asdad</td>
+	<td>a</td>
+	<td>sf</td>
+	<td>sf</td>
+	<td>sfc</td>
+	<td>1</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>78</td>
+	<td>a</td>
+	<td>ads</td>
+	<td>fv</td>
+	<td>rfgv</td>
+	<td>fs</td>
+	<td>1</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>79</td>
+	<td>ad</td>
+	<td>adsv</td>
+	<td>fdv</td>
+	<td>fv</td>
+	<td>fb</td>
+	<td>0</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>80</td>
+	<td>nama</td>
+	<td>f</td>
+	<td>g</td>
+	<td>f</td>
+	<td>a</td>
+	<td>1</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>81</td>
+	<td>dv</td>
+	<td>v</td>
+	<td>vd</td>
+	<td>dv</td>
+	<td>a</td>
+	<td>0</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>82</td>
+	<td>a</td>
+	<td>d</td>
+	<td>dv</td>
+	<td>vd</td>
+	<td>dv</td>
+	<td>1</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>85</td>
+	<td>gambar</td>
+	<td>a</td>
+	<td>s</td>
+	<td>d</td>
+	<td>f</td>
+	<td>0</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>87</td>
+	<td>a</td>
+	<td>s</td>
+	<td>c</td>
+	<td>f</td>
+	<td>v</td>
+	<td>1</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>94</td>
+	<td>a</td>
+	<td>a</td>
+	<td>ca</td>
+	<td>ac</td>
+	<td>ac</td>
+	<td>3</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>95</td>
+	<td>f</td>
+	<td>a</td>
+	<td>a</td>
+	<td>d</td>
+	<td>d</td>
+	<td>3</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>96</td>
+	<td>fs</td>
+	<td>f</td>
+	<td>s</td>
+	<td>dv</td>
+	<td>v</td>
+	<td>1</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>97</td>
+	<td>fs</td>
+	<td>f</td>
+	<td>s</td>
+	<td>dv</td>
+	<td>v</td>
+	<td>1</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>98</td>
+	<td>freda</td>
+	<td>apa</td>
+	<td>fin</td>
+	<td>fi</td>
+	<td>s</td>
+	<td>3</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>99</td>
+	<td>poto</td>
+	<td>sc</td>
+	<td>cs</td>
+	<td>cs</td>
+	<td>cs</td>
+	<td>2</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>106</td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>107</td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>108</td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>110</td>
+	<td>soal</td>
+	<td>alamat</td>
+	<td>jenis</td>
+	<td>pilc</td>
+	<td>pild</td>
+	<td>1</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>111</td>
+	<td>soal</td>
+	<td>alamat</td>
+	<td>jenis</td>
+	<td>pilc</td>
+	<td>pild</td>
+	<td>1</td>
+	<td>1</td>
+</tr>
+
+
+
+<tr>
+	<td>112</td>
+	<td>soal</td>
+	<td>alamat</td>
+	<td>jenis</td>
+	<td>pilc</td>
+	<td>pild</td>
+	<td>1</td>
+	<td>1</td>
+</tr>
+
+
+</table>
