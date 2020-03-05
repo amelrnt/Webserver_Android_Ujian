@@ -189,7 +189,20 @@ if (defined('ENVIRONMENT'))
 		}
 
 		define('APPPATH', BASEPATH.$application_folder.'/');
-	}
+    }
+    
+/*
+* --------------------------------------------------------------------
+* LOAD PHP DOT ENV FILE
+* --------------------------------------------------------------------
+*
+* And away we go...
+*
+*/
+require_once BASEPATH . 'dotenv/autoloader.php';
+
+$dotenv = new Dotenv\Dotenv(__DIR__);
+$dotenv->load();
 
 /*
  * --------------------------------------------------------------------

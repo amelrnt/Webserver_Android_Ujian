@@ -48,11 +48,11 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'root';
-$db['default']['password'] = '';
-$db['default']['database'] = 'db_kuis';
-$db['default']['dbdriver'] = 'mysql';
+$db['default']['hostname'] = getenv('DB_HOST');
+$db['default']['username'] = getenv('DB_USERNAME');
+$db['default']['password'] = getenv('DB_PASSWORD');
+$db['default']['database'] = getenv('DB_DATABASE');
+$db['default']['dbdriver'] = getenv('DB_CONNECTION');
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
 $db['default']['db_debug'] = TRUE;

@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://localhost:8080/TA/';
+$config['base_url']	= getenv('APP_URL');
 
 /*
 |--------------------------------------------------------------------------
