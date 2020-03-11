@@ -56,7 +56,7 @@ class Excel extends CI_Controller {
                     "pil_c"=> $rowData[0][4],
                     "pil_d"=> $rowData[0][5],
                     "jwban"=> $rowData[0][6],
-                    "tipe"=> $rowData[0][7],
+                    "kategori"=> $rowData[0][7],
                     "paket"=> set_value("paket")
 
                 );

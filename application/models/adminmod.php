@@ -55,8 +55,8 @@
 			return $jumlah;
 		}
 
-		function jumlahsoal($tipe,$paket){
-			$this->db->select()->from('tbl_soal')->where(array('tipe'=>$tipe,'paket'=>$paket));
+		function jumlahsoal($kategori,$paket){
+			$this->db->select()->from('tbl_soal')->where(array('kategori'=>$kategori,'paket'=>$paket));
 			$return = $this->db->get();
 			return $return->result_array();
 		}

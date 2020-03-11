@@ -329,7 +329,7 @@
 	<td>BNC</td>
 	<td>RJ-11</td>
 	<td>RJ-45</td>
-	<td>Tipe-F</td>
+	<td>kategori-F</td>
 	<td>2</td>
 	<td>1</td>
 </tr>
@@ -598,7 +598,7 @@
 
 <tr>
 	<td>53</td>
-	<td>Berikut ini yang termasuk tipe data reference adalah</td>
+	<td>Berikut ini yang termasuk kategori data reference adalah</td>
 	<td>float</td>
 	<td>character</td>
 	<td>short</td>

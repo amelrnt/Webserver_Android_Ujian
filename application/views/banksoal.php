@@ -55,7 +55,7 @@
           <th>Pilihan B</th>
           <th>Pilihan C</th>
           <th>Pilihan D</th>
-          <th>Tipe</th>
+          <th>kategori</th>
           <th>Paket</th>
           <th>Aksi</th>
         </tr>
@@ -69,23 +69,23 @@
           <td><?php if($row['jwban']==1){?><span class="label label-success">Key</span> <?php }?><?=$row['pil_b']?></td>
           <td><?php if($row['jwban']==2){?><span class="label label-success">Key</span> <?php }?><?=$row['pil_c']?></td>
           <td><?php if($row['jwban']==3){?><span class="label label-success">Key</span> <?php }?><?=$row['pil_d']?></td>
-          <td><?php if($row['tipe']==1){echo "Web";}else if($row['tipe']==2){echo "Mobile";}else if($row['tipe']==3){echo"Jaringan";}else if($row['tipe']==4){echo"Algoritma";}else if($row['tipe']==5){echo"Basisdata";}else if($row['tipe']==6){echo"Objek";}else if($row['tipe']==7){echo"Gui";}?></td>
+          <td><?php if($row['kategori']==1){echo "Web";}else if($row['kategori']==2){echo "Mobile";}else if($row['kategori']==3){echo"Jaringan";}else if($row['kategori']==4){echo"Algoritma";}else if($row['kategori']==5){echo"Basisdata";}else if($row['kategori']==6){echo"Objek";}else if($row['kategori']==7){echo"Gui";}?></td>
           <td><?=$row['paket']?></td>
           <td>
                <div class="btn-group-vertical" role="group">
-                    <?php if($row['tipe']==1){?>
+                    <?php if($row['kategori']==1){?>
                          <a href="<?=base_url()?>index.php/cujian/editsoal/1/<?=$row['id']?>"><button class="btn btn-danger fa fa-pencil-square-o"></button>
-                    <?php }else if($row['tipe']==2){?>
+                    <?php }else if($row['kategori']==2){?>
                          <a href="<?=base_url()?>index.php/cujian/editsoal/2/<?=$row['id']?>"><button class="btn btn-danger fa fa-pencil-square-o" data-toggle="modal" data-target="#edits<?=$row['id']?>"></button>
-                    <?php }else if($row['tipe']==3){ ?>
+                    <?php }else if($row['kategori']==3){ ?>
                          <a href="<?=base_url()?>index.php/cujian/editsoal/3/<?=$row['id']?>"><button class="btn btn-danger fa fa-pencil-square-o" data-toggle="modal" data-target="#editr<?=$row['id']?>"></button>
-                    <?php }else if($row['tipe']==4){ ?>
+                    <?php }else if($row['kategori']==4){ ?>
                          <a href="<?=base_url()?>index.php/cujian/editsoal/4/<?=$row['id']?>"><button class="btn btn-danger fa fa-pencil-square-o" data-toggle="modal" data-target="#editr<?=$row['id']?>"></button>
-                    <?php }else if($row['tipe']==5){ ?>
+                    <?php }else if($row['kategori']==5){ ?>
                          <a href="<?=base_url()?>index.php/cujian/editsoal/5/<?=$row['id']?>"><button class="btn btn-danger fa fa-pencil-square-o" data-toggle="modal" data-target="#editr<?=$row['id']?>"></button>
-                    <?php }else if($row['tipe']==6){ ?>
+                    <?php }else if($row['kategori']==6){ ?>
                          <a href="<?=base_url()?>index.php/cujian/editsoal/6/<?=$row['id']?>"><button class="btn btn-danger fa fa-pencil-square-o" data-toggle="modal" data-target="#editr<?=$row['id']?>"></button>
-                    <?php }else if($row['tipe']==7){ ?>
+                    <?php }else if($row['kategori']==7){ ?>
                          <a href="<?=base_url()?>index.php/cujian/editsoal/7/<?=$row['id']?>"><button class="btn btn-danger fa fa-pencil-square-o" data-toggle="modal" data-target="#editr<?=$row['id']?>"></button>
                              
                     <?php } ?>
