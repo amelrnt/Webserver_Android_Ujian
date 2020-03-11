@@ -12,7 +12,7 @@ foreach ($paket as $data) { ?>
 	<td><?php echo $data['pil_c'] ?></td>
 	<td><?php echo $data['pil_d'] ?></td>
 	<td><?php echo $data['jwban'] ?></td>
-	<td><?php echo $data['tipe'] ?></td>
+	<td><?php echo $data['kategori'] ?></td>
 	<td><?php echo $data['paket'] ?></td>
 </tr>
 

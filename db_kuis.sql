@@ -1,20 +1,22 @@
 -- phpMyAdmin SQL Dump
--- version 4.1.12
--- http://www.phpmyadmin.net
+-- version 4.8.4
+-- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 08 Nov 2017 pada 01.50
--- Versi Server: 5.6.16
--- PHP Version: 5.5.11
+-- Generation Time: Mar 11, 2020 at 03:01 PM
+-- Server version: 10.1.37-MariaDB
+-- PHP Version: 7.3.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
+/*!40101 SET NAMES utf8mb4 */;
 
 --
 -- Database: `db_kuis`
@@ -23,49 +25,46 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbl_paket`
+-- Table structure for table `tbl_paket`
 --
 
-CREATE TABLE IF NOT EXISTS `tbl_paket` (
-  `paket` int(11) NOT NULL AUTO_INCREMENT,
-  `nama_paket` varchar(20) NOT NULL,
-  PRIMARY KEY (`paket`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
+CREATE TABLE `tbl_paket` (
+  `paket` int(11) NOT NULL,
+  `nama_paket` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `tbl_paket`
+-- Dumping data for table `tbl_paket`
 --
 
 INSERT INTO `tbl_paket` (`paket`, `nama_paket`) VALUES
 (8, 'Paket 1'),
 (9, 'Paket 2'),
-(10, 'Paket 3');
+(13, 'paket 3');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbl_soal`
+-- Table structure for table `tbl_soal`
 --
 
-CREATE TABLE IF NOT EXISTS `tbl_soal` (
-  `id` int(3) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `tbl_soal` (
+  `id` int(3) NOT NULL,
   `soal` varchar(2405) DEFAULT NULL,
   `pil_a` text,
   `pil_b` varchar(70) DEFAULT NULL,
   `pil_c` varchar(102) DEFAULT NULL,
   `pil_d` varchar(106) DEFAULT NULL,
   `jwban` int(1) DEFAULT NULL,
-  `tipe` int(1) DEFAULT NULL,
-  `paket` int(11) NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `paket` (`paket`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=190 ;
+  `kategori` int(1) DEFAULT NULL,
+  `paket` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data untuk tabel `tbl_soal`
+-- Dumping data for table `tbl_soal`
 --
 
-INSERT INTO `tbl_soal` (`id`, `soal`, `pil_a`, `pil_b`, `pil_c`, `pil_d`, `jwban`, `tipe`, `paket`) VALUES
+INSERT INTO `tbl_soal` (`id`, `soal`, `pil_a`, `pil_b`, `pil_c`, `pil_d`, `jwban`, `kategori`, `paket`) VALUES
 (1, 'Halaman web yang dapat diakses dan berinteraksi sesuai dengan keinginan merupakan teknologi web yang berbasis...', 'Konten', 'Struktural', 'Array', 'Dynamis', 0, 1, 8),
 (2, 'WWW adalah singkatan dari.', 'World Wide Web', 'World Web Wide', 'Web World Wide', 'Web Wide World', 0, 1, 8),
 (3, 'Standar yang digunakan untuk membentuk web...', 'URL, HTTP, HTML', 'WWW, HTTP, HTML', 'URL, WWW, HTML', 'URL, HTTP, WWW', 0, 1, 8),
@@ -194,7 +193,7 @@ INSERT INTO `tbl_soal` (`id`, `soal`, `pil_a`, `pil_b`, `pil_c`, `pil_d`, `jwban
 (174, 'Message yang tampil jika salah dalam pemberian nama suatu control abjek adalah', 'Not a legal object name', 'Illegal operation', 'No legal name', 'Not object name', 0, 7, 8),
 (175, 'Pada Ms. Visual Basic, Type data yang mempunyai ukuran 16 byte adalah....', 'Object', 'Variant', 'Boolean', 'Byte', 1, 7, 8),
 (176, 'Pada Ms. Basic, dibawah ini semua adalah menu bar, kecuali', 'Debug', 'Insert', 'Window', 'Diagram', 1, 7, 8),
-(177, 'Baris dari : FORM2.Print "2" + "4", menghasilkan .', '8', '6', '3', '24', 3, 7, 8),
+(177, 'Baris dari : FORM2.Print \"2\" + \"4\", menghasilkan .', '8', '6', '3', '24', 3, 7, 8),
 (178, 'Ekstensi file project visual basic adalah..', '.FRM', '.DOC', '.VBP', '.VBF', 2, 7, 8),
 (179, 'Pada Ms. Visual Basic untuk menempatkan posisi kursor yang diiginkan adalah', 'Pointer', 'Sel', 'SetFocus', 'Jawaban a, b, c dan d salah', 2, 7, 8),
 (180, 'Pada Ms. Visual Basic, control yang digunakan untuk menampilkan teks yang tidak dapat diperbaiki oleh pemakai adalah', 'CheckBox', 'Label', 'Option Button', 'Frame', 1, 7, 8),
@@ -206,37 +205,77 @@ INSERT INTO `tbl_soal` (`id`, `soal`, `pil_a`, `pil_b`, `pil_c`, `pil_d`, `jwban
 (186, 'Type data ini merupakan type variabel istimewa, yang dimaksud type data data tersebut adalah :', 'Variant', 'Byte', 'Integer', 'Boolean', 0, 7, 8),
 (187, 'Pernyataan ini hanya bisa diletakkan dibagian awal kalimat komentar dan hanya sebagai catatan didalam program (tidak diproses), pernyataan yang dimaksud adalah', 'DIM', 'REM', 'IF', 'Private', 1, 7, 8),
 (188, 'Yang digunakan untuk menerangkan field name adalah ....', 'Type', 'Caption', 'Description', 'Properties', 2, 1, 8),
-(189, 'tes', 'ad', 'fd', 'bg', 'e', 3, 1, 8);
+(189, 'tes', 'ad', 'fd', 'bg', 'e', 3, 1, 8),
+(190, 'apa', '1', '2', '3', '4', 1, 7, 13);
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbl_versi`
+-- Table structure for table `tbl_versi`
 --
 
-CREATE TABLE IF NOT EXISTS `tbl_versi` (
+CREATE TABLE `tbl_versi` (
   `id_ver` int(11) NOT NULL,
   `version` varchar(5) NOT NULL,
-  `detail` varchar(5) NOT NULL,
-  PRIMARY KEY (`id_ver`)
+  `detail` varchar(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `tbl_versi`
+-- Dumping data for table `tbl_versi`
 --
 
 INSERT INTO `tbl_versi` (`id_ver`, `version`, `detail`) VALUES
 (1, '12', '8');
 
 --
--- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
+-- Indexes for dumped tables
 --
 
 --
--- Ketidakleluasaan untuk tabel `tbl_soal`
+-- Indexes for table `tbl_paket`
+--
+ALTER TABLE `tbl_paket`
+  ADD PRIMARY KEY (`paket`);
+
+--
+-- Indexes for table `tbl_soal`
+--
+ALTER TABLE `tbl_soal`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `paket` (`paket`);
+
+--
+-- Indexes for table `tbl_versi`
+--
+ALTER TABLE `tbl_versi`
+  ADD PRIMARY KEY (`id_ver`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `tbl_paket`
+--
+ALTER TABLE `tbl_paket`
+  MODIFY `paket` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+
+--
+-- AUTO_INCREMENT for table `tbl_soal`
+--
+ALTER TABLE `tbl_soal`
+  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=191;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `tbl_soal`
 --
 ALTER TABLE `tbl_soal`
   ADD CONSTRAINT `tbl_soal_ibfk_1` FOREIGN KEY (`paket`) REFERENCES `tbl_paket` (`paket`);
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

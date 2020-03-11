@@ -74,10 +74,10 @@ class Cujian extends CI_Controller {
 		$data = $this->adminmod->jumlahsoal(1,1);
 		print_r(count($data));
 	}
-	// public function input($tipe){
+	// public function input($kategori){
 	// 	$this->load->model('adminmod');
 	// 	if($_POST){
-	// 		switch ($tipe) {
+	// 		switch ($kategori) {
 	// 			case 'web': $type=1; break;
 	// 			case 'mobile': $type=2; break;
 	// 			case 'jaringan': $type=3; break;
@@ -111,7 +111,7 @@ class Cujian extends CI_Controller {
 	// 					'pil_c'=>$_POST['pil_c'],
 	// 					'pil_d'=>$_POST['pil_d'],
 	// 					'jwban'=>$_POST['key'],
-	// 					'tipe'=>$type,
+	// 					'kategori'=>$type,
 	// 					'paket'=>$_POST['paket']
 	// 					);
 	// 				$this->adminmod->tambahData("tbl_soal",$data);
@@ -125,10 +125,10 @@ class Cujian extends CI_Controller {
 
 	// }
 
-	// public function input($tipe){
+	// public function input($kategori){
 	// 	$this->load->model('adminmod');
 	// 	if($_POST){
-	// 		switch ($tipe) {
+	// 		switch ($kategori) {
 	// 			case 'web': $type=1; break;
 	// 			case 'mobile': $type=2; break;
 	// 			case 'jaringan': $type=3; break;
@@ -162,7 +162,7 @@ class Cujian extends CI_Controller {
 	// 					'pil_c'=>$_POST['pil_c'],
 	// 					'pil_d'=>$_POST['pil_d'],
 	// 					'jwban'=>$_POST['key'],
-	// 					'tipe'=>$type,
+	// 					'kategori'=>$type,
 	// 					'paket'=>$_POST['paket']
 	// 					);
 	// 				$this->adminmod->tambahData("tbl_soal",$data);
@@ -175,10 +175,10 @@ class Cujian extends CI_Controller {
 			
 
 	// }
-	public function input($tipe){
+	public function input($kategori){
 		$this->load->model('adminmod');
 		if($_POST){
-			if($tipe=="web"){		
+			if($kategori=="web"){		
 				if(isset($_FILES)){
 				// $gambar=basename($_FILES["filegambar"]["name"],".jpg");
 				// $target="uploads/";
@@ -191,7 +191,7 @@ class Cujian extends CI_Controller {
 					'pil_c'=>$_POST['pil_c'],
 					'pil_d'=>$_POST['pil_d'],
 					'jwban'=>$_POST['key'],
-					'tipe'=>"1",
+					'kategori'=>"1",
 					'paket'=>$_POST['paket']
 					);	
 				}else{
@@ -202,12 +202,12 @@ class Cujian extends CI_Controller {
 					'pil_c'=>$_POST['pil_c'],
 					'pil_d'=>$_POST['pil_d'],
 					'jwban'=>$_POST['key'],
-					'tipe'=>"1",
+					'kategori'=>"1",
 					'paket'=>$_POST['paket']
 					);
 				}
 			}
-			else if($tipe=="mobile"){
+			else if($kategori=="mobile"){
 				if(isset($_FILES)){
 				$data=array(
 					'soal'=>$_POST['pertanyaan'],
@@ -217,7 +217,7 @@ class Cujian extends CI_Controller {
 					'pil_d'=>$_POST['pil_d'],
 					'jwban'=>$_POST['key'],
 					// 'gambar'=>$gambar,
-					'tipe'=>"2",
+					'kategori'=>"2",
 					'paket'=>$_POST['paket']
 					);	
 				}else{
@@ -228,11 +228,11 @@ class Cujian extends CI_Controller {
 					'pil_c'=>$_POST['pil_c'],
 					'pil_d'=>$_POST['pil_d'],
 					'jwban'=>$_POST['key'],
-					'tipe'=>"2",
+					'kategori'=>"2",
 					'paket'=>$_POST['paket']
 					);
 				}
-			}else if($tipe=="jaringan"){
+			}else if($kategori=="jaringan"){
 				if(isset($_FILES)){
 				$data=array(
 					'soal'=>$_POST['pertanyaan'],
@@ -241,7 +241,7 @@ class Cujian extends CI_Controller {
 					'pil_c'=>$_POST['pil_c'],
 					'pil_d'=>$_POST['pil_d'],
 					'jwban'=>$_POST['key'],
-					'tipe'=>"3",
+					'kategori'=>"3",
 					'paket'=>$_POST['paket']
 					);	
 				}else{
@@ -252,12 +252,12 @@ class Cujian extends CI_Controller {
 					'pil_c'=>$_POST['pil_c'],
 					'pil_d'=>$_POST['pil_d'],
 					'jwban'=>$_POST['key'],
-					'tipe'=>"3",
+					'kategori'=>"3",
 					'paket'=>$_POST['paket']
 					);
 			}
 			}
-			else if($tipe=="algoritma"){
+			else if($kategori=="algoritma"){
 				if(isset($_FILES)){
 				$data=array(
 					'soal'=>$_POST['pertanyaan'],
@@ -266,7 +266,7 @@ class Cujian extends CI_Controller {
 					'pil_c'=>$_POST['pil_c'],
 					'pil_d'=>$_POST['pil_d'],
 					'jwban'=>$_POST['key'],
-					'tipe'=>"4",
+					'kategori'=>"4",
 					'paket'=>$_POST['paket']
 					);	
 				}else{
@@ -277,37 +277,12 @@ class Cujian extends CI_Controller {
 					'pil_c'=>$_POST['pil_c'],
 					'pil_d'=>$_POST['pil_d'],
 					'jwban'=>$_POST['key'],
-					'tipe'=>"4",
-					'paket'=>$_POST['paket']
-					);
-				}
-			}
-			else if($tipe=="basisdata"){
-				if(isset($_FILES)){
-				$data=array(
-					'soal'=>$_POST['pertanyaan'],
-					'pil_a'=>$_POST['pil_a'],
-					'pil_b'=>$_POST['pil_b'],
-					'pil_c'=>$_POST['pil_c'],
-					'pil_d'=>$_POST['pil_d'],
-					'jwban'=>$_POST['key'],
-					'tipe'=>"5",
-					'paket'=>$_POST['paket']
-					);	
-				}else{
-				$data=array(
-					'soal'=>$_POST['pertanyaan'],
-					'pil_a'=>$_POST['pil_a'],
-					'pil_b'=>$_POST['pil_b'],
-					'pil_c'=>$_POST['pil_c'],
-					'pil_d'=>$_POST['pil_d'],
-					'jwban'=>$_POST['key'],
-					'tipe'=>"5",
+					'kategori'=>"4",
 					'paket'=>$_POST['paket']
 					);
 				}
 			}
-			else if($tipe=="objek"){
+			else if($kategori=="basisdata"){
 				if(isset($_FILES)){
 				$data=array(
 					'soal'=>$_POST['pertanyaan'],
@@ -316,7 +291,7 @@ class Cujian extends CI_Controller {
 					'pil_c'=>$_POST['pil_c'],
 					'pil_d'=>$_POST['pil_d'],
 					'jwban'=>$_POST['key'],
-					'tipe'=>"6",
+					'kategori'=>"5",
 					'paket'=>$_POST['paket']
 					);	
 				}else{
@@ -327,12 +302,12 @@ class Cujian extends CI_Controller {
 					'pil_c'=>$_POST['pil_c'],
 					'pil_d'=>$_POST['pil_d'],
 					'jwban'=>$_POST['key'],
-					'tipe'=>"6",
+					'kategori'=>"5",
 					'paket'=>$_POST['paket']
 					);
 				}
 			}
-			else if($tipe=="gui"){
+			else if($kategori=="objek"){
 				if(isset($_FILES)){
 				$data=array(
 					'soal'=>$_POST['pertanyaan'],
@@ -341,7 +316,7 @@ class Cujian extends CI_Controller {
 					'pil_c'=>$_POST['pil_c'],
 					'pil_d'=>$_POST['pil_d'],
 					'jwban'=>$_POST['key'],
-					'tipe'=>"7",
+					'kategori'=>"6",
 					'paket'=>$_POST['paket']
 					);	
 				}else{
@@ -352,7 +327,32 @@ class Cujian extends CI_Controller {
 					'pil_c'=>$_POST['pil_c'],
 					'pil_d'=>$_POST['pil_d'],
 					'jwban'=>$_POST['key'],
-					'tipe'=>"7",
+					'kategori'=>"6",
+					'paket'=>$_POST['paket']
+					);
+				}
+			}
+			else if($kategori=="gui"){
+				if(isset($_FILES)){
+				$data=array(
+					'soal'=>$_POST['pertanyaan'],
+					'pil_a'=>$_POST['pil_a'],
+					'pil_b'=>$_POST['pil_b'],
+					'pil_c'=>$_POST['pil_c'],
+					'pil_d'=>$_POST['pil_d'],
+					'jwban'=>$_POST['key'],
+					'kategori'=>"7",
+					'paket'=>$_POST['paket']
+					);	
+				}else{
+				$data=array(
+					'soal'=>$_POST['pertanyaan'],
+					'pil_a'=>$_POST['pil_a'],
+					'pil_b'=>$_POST['pil_b'],
+					'pil_c'=>$_POST['pil_c'],
+					'pil_d'=>$_POST['pil_d'],
+					'jwban'=>$_POST['key'],
+					'kategori'=>"7",
 					'paket'=>$_POST['paket']
 					);
 				}
@@ -374,37 +374,37 @@ class Cujian extends CI_Controller {
 		$this->load->view('config');
 		$this->load->view('banksoal',$data);
 		}else if($param=="web"){
-			$where=array('tipe'=>1);
+			$where=array('kategori'=>1);
 			$data['soal']=$this->adminmod->dataFilter('tbl_soal',$where);
 			$this->load->view('config');
 			$this->load->view('banksoal',$data);
 		}else if($param=="mobile"){
-			$where=array('tipe'=>2);
+			$where=array('kategori'=>2);
 			$data['soal']=$this->adminmod->dataFilter('tbl_soal',$where);
 			$this->load->view('config');
 			$this->load->view('banksoal',$data);
 		}else if($param=="jaringan"){
-			$where=array('tipe'=>3);
+			$where=array('kategori'=>3);
 			$data['soal']=$this->adminmod->dataFilter('tbl_soal',$where);
 			$this->load->view('config');
 			$this->load->view('banksoal',$data);
 		}else if($param=="algoritma"){
-			$where=array('tipe'=>4);
+			$where=array('kategori'=>4);
 			$data['soal']=$this->adminmod->dataFilter('tbl_soal',$where);
 			$this->load->view('config');
 			$this->load->view('banksoal',$data);
 		}else if($param=="basisdata"){
-			$where=array('tipe'=>5);
+			$where=array('kategori'=>5);
 			$data['soal']=$this->adminmod->dataFilter('tbl_soal',$where);
 			$this->load->view('config');
 			$this->load->view('banksoal',$data);
 		}else if($param=="objek"){
-			$where=array('tipe'=>6);
+			$where=array('kategori'=>6);
 			$data['soal']=$this->adminmod->dataFilter('tbl_soal',$where);
 			$this->load->view('config');
 			$this->load->view('banksoal',$data);
 		}else if($param=="gui"){
-			$where=array('tipe'=>7);
+			$where=array('kategori'=>7);
 			$data['soal']=$this->adminmod->dataFilter('tbl_soal',$where);
 			$this->load->view('config');
 			$this->load->view('banksoal',$data);
@@ -421,7 +421,7 @@ class Cujian extends CI_Controller {
 			$data['msg']="Paket berhasil dibuat.";
 			$data['alert']="success";
 			$this->index($data);
-			redirect('http://localhost:8080/TA/index.php/cujian');
+			redirect('http://localhost:8080/Webserver_Android_Ujian/');
 		}
 	}
 
@@ -431,11 +431,11 @@ class Cujian extends CI_Controller {
 		$this->index($data);
 	}
 
-	public function editsoal($tipe,$id){
+	public function editsoal($kategori,$id){
 		$this->load->model('adminmod');
 		//$data['reading']=$this->adminmod->tampilData('tbl_reading');
 		if(isset($_POST['submit'])){
-		if ($tipe=='1') {
+		if ($kategori=='1') {
 			if(isset($_FILES)){
 				$data=array(
 					'soal'=>$_POST['pertanyaan'],
@@ -444,7 +444,7 @@ class Cujian extends CI_Controller {
 					'pil_c'=>$_POST['pil_c'],
 					'pil_d'=>$_POST['pil_d'],
 					'jwban'=>$_POST['key'],
-					'tipe'=>"1",
+					'kategori'=>"1",
 					'paket'=>$_POST['paket']
 					);	
 				}else{
@@ -455,11 +455,11 @@ class Cujian extends CI_Controller {
 					'pil_c'=>$_POST['pil_c'],
 					'pil_d'=>$_POST['pil_d'],
 					'jwban'=>$_POST['key'],
-					'tipe'=>"1",
+					'kategori'=>"1",
 					'paket'=>$_POST['paket']
 					);
 				}
-		}else if($tipe=='2'){
+		}else if($kategori=='2'){
 			if(isset($_FILES)){
 				$data=array(
 					'soal'=>$_POST['pertanyaan'],
@@ -468,7 +468,7 @@ class Cujian extends CI_Controller {
 					'pil_c'=>$_POST['pil_c'],
 					'pil_d'=>$_POST['pil_d'],
 					'jwban'=>$_POST['key'],
-					'tipe'=>"2",
+					'kategori'=>"2",
 					'paket'=>$_POST['paket']
 					);	
 				}else{
@@ -479,11 +479,11 @@ class Cujian extends CI_Controller {
 					'pil_c'=>$_POST['pil_c'],
 					'pil_d'=>$_POST['pil_d'],
 					'jwban'=>$_POST['key'],
-					'tipe'=>"2",
+					'kategori'=>"2",
 					'paket'=>$_POST['paket']
 					);
 				}
-			}else if($tipe=='3'){
+			}else if($kategori=='3'){
 				if(isset($_FILES)){
 				$data=array(
 					'soal'=>$_POST['pertanyaan'],
@@ -492,7 +492,7 @@ class Cujian extends CI_Controller {
 					'pil_c'=>$_POST['pil_c'],
 					'pil_d'=>$_POST['pil_d'],
 					'jwban'=>$_POST['key'],
-					'tipe'=>"3",
+					'kategori'=>"3",
 					'paket'=>$_POST['paket']
 					);	
 				}else{
@@ -503,11 +503,11 @@ class Cujian extends CI_Controller {
 					'pil_c'=>$_POST['pil_c'],
 					'pil_d'=>$_POST['pil_d'],
 					'jwban'=>$_POST['key'],
-					'tipe'=>"3",
+					'kategori'=>"3",
 					'paket'=>$_POST['paket']
 					);
 				}
-			}else if($tipe=='4'){
+			}else if($kategori=='4'){
 				if(isset($_FILES)){
 				$data=array(
 					'soal'=>$_POST['pertanyaan'],
@@ -516,7 +516,7 @@ class Cujian extends CI_Controller {
 					'pil_c'=>$_POST['pil_c'],
 					'pil_d'=>$_POST['pil_d'],
 					'jwban'=>$_POST['key'],
-					'tipe'=>"4",
+					'kategori'=>"4",
 					'paket'=>$_POST['paket']
 					);	
 				}else{
@@ -527,11 +527,11 @@ class Cujian extends CI_Controller {
 					'pil_c'=>$_POST['pil_c'],
 					'pil_d'=>$_POST['pil_d'],
 					'jwban'=>$_POST['key'],
-					'tipe'=>"4",
+					'kategori'=>"4",
 					'paket'=>$_POST['paket']
 					);
 				}
-			}else if($tipe=='5'){
+			}else if($kategori=='5'){
 				if(isset($_FILES)){
 				$data=array(
 					'soal'=>$_POST['pertanyaan'],
@@ -540,7 +540,7 @@ class Cujian extends CI_Controller {
 					'pil_c'=>$_POST['pil_c'],
 					'pil_d'=>$_POST['pil_d'],
 					'jwban'=>$_POST['key'],
-					'tipe'=>"5",
+					'kategori'=>"5",
 					'paket'=>$_POST['paket']
 					);	
 				}else{
@@ -551,11 +551,11 @@ class Cujian extends CI_Controller {
 					'pil_c'=>$_POST['pil_c'],
 					'pil_d'=>$_POST['pil_d'],
 					'jwban'=>$_POST['key'],
-					'tipe'=>"5",
+					'kategori'=>"5",
 					'paket'=>$_POST['paket']
 					);
 				}
-			}else if($tipe=='6'){
+			}else if($kategori=='6'){
 				if(isset($_FILES)){
 				$data=array(
 					'soal'=>$_POST['pertanyaan'],
@@ -564,7 +564,7 @@ class Cujian extends CI_Controller {
 					'pil_c'=>$_POST['pil_c'],
 					'pil_d'=>$_POST['pil_d'],
 					'jwban'=>$_POST['key'],
-					'tipe'=>"6",
+					'kategori'=>"6",
 					'paket'=>$_POST['paket']
 					);	
 				}else{
@@ -575,11 +575,11 @@ class Cujian extends CI_Controller {
 					'pil_c'=>$_POST['pil_c'],
 					'pil_d'=>$_POST['pil_d'],
 					'jwban'=>$_POST['key'],
-					'tipe'=>"6",
+					'kategori'=>"6",
 					'paket'=>$_POST['paket']
 					);
 				}
-			}else if($tipe=='7'){
+			}else if($kategori=='7'){
 				if(isset($_FILES)){
 				$data=array(
 					'soal'=>$_POST['pertanyaan'],
@@ -588,7 +588,7 @@ class Cujian extends CI_Controller {
 					'pil_c'=>$_POST['pil_c'],
 					'pil_d'=>$_POST['pil_d'],
 					'jwban'=>$_POST['key'],
-					'tipe'=>"7",
+					'kategori'=>"7",
 					'paket'=>$_POST['paket']
 					);	
 				}else{
@@ -599,7 +599,7 @@ class Cujian extends CI_Controller {
 					'pil_c'=>$_POST['pil_c'],
 					'pil_d'=>$_POST['pil_d'],
 					'jwban'=>$_POST['key'],
-					'tipe'=>"7",
+					'kategori'=>"7",
 					'paket'=>$_POST['paket']
 					);
 				}
@@ -616,19 +616,19 @@ class Cujian extends CI_Controller {
 		$data['edit']=$this->adminmod->dataFilter('tbl_soal',$where);
 		$data['id']=$id;
 		$this->load->view('config');
-		if($tipe==1){
+		if($kategori==1){
 			$this->load->view('md_web',$data);
-		}else if($tipe==2){
+		}else if($kategori==2){
 			$this->load->view('md_mobile',$data);
-		}else if($tipe==3){
+		}else if($kategori==3){
 			$this->load->view('md_jaringan',$data);
-		}else if($tipe==4){
+		}else if($kategori==4){
 			$this->load->view('md_algoritma',$data);
-		}else if($tipe==5){
+		}else if($kategori==5){
 			$this->load->view('md_basisdata',$data);
-		}else if($tipe==6){
+		}else if($kategori==6){
 			$this->load->view('md_objek',$data);
-		}else if($tipe==7){
+		}else if($kategori==7){
 			$this->load->view('md_gui',$data);
 		
 	
