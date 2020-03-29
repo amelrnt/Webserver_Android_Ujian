@@ -5,6 +5,8 @@
 - Copy File `.env` to `.env.development`
 - Open `.env.development` and set variabel :
 ```
+APP_URL=http://localhost/Webserver_Android_Ujian/
+
 DB_CONNECTION=mysqli
 DB_HOST=127.0.0.1
 DB_PORT=3306
@@ -14,79 +16,57 @@ DB_PASSWORD=
 ```
 
 ## JSON Response Format
-
-### Secara default format json :
-```json
-{
-    "status": 200,
-    "message": "Success or Failed",
-    "data": []
-}
-```
+Berikut merupakan JSON Request & Response Contract :
 
 #### Check Version
+Request :
+
+`http://localhost/Webserver_Android_Ujian/api/check_version`
+
+Reponse :
 ```json
 {
-    "status": 200,
-    "message": "Success or Failed",
-    "data": {
-        "id_ver": 1,
-        "version": 12,
-        "detail": 8
-    }
+    "id_ver": 1,
+    "version": 12,
+    "detail": 8
 }
 ```
 
 #### Update Paket
 Request :
-```json
-http://hostname/wservice
-```
+
+`http://localhost/Webserver_Android_Ujian/api/update_paket`
+
+Reponse :
 Response: 
 ```json
-{
-    "status": 200,
-    "message": "Success or Failed",
-    "data": [
-        {
-            "paket":"8",
-            "nama_paket":"Paket 1"
-        },
-        {
-            "paket":"9",
-            "nama_paket":"Paket 2"
-        },
-        {
-            "paket":"10",
-            "nama_paket":"Paket 3"
-        }
-    ]
-}
+[
+    {
+        "paket":"8",
+        "nama_paket":"Paket 1"
+    }
+]
 ```
 #### Update Soal
 Request :
+
+`http://localhost/Webserver_Android_Ujian/api/update_soal/:id_paket`
+
+Reponse : 
 ```json
-http://hostname/wservice/update_soal/:id_paket
-```
-Response: 
-```json
-{
-    "status": 200,
-    "message": "Success or Failed",
-    "data": [
-        {
-            "id": 189,
-            "soal": "tes",
-            "pil_a": "ad",
-            "pil_b": "fd",
-            "pil_c": "bg",
-            "pil_d": "e",
-            "jwban": 3,
-            "tipe": 1,
-            "paket": 8
-        }
-    ]
-}
+[
+    {
+      "id": 189,
+       "soal": "",
+       "pil_a": "",
+       "pil_b": "",
+       "pil_c": "",
+       "pil_d": "",
+       "jwban": 3,
+       "tipe": 1,
+       "paket": 8
+    }
+]
 ```
 
 ## Contributor
