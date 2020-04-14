@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<?php
-if(isset($msg)){
+<?php if(isset($msg)){
   switch($alert){
     case "success" : ?><div class="alert alert-success" role="alert"><p><?=$msg?></p></div><?php break;
     case "warning" : ?><div class="alert alert-warning" role="alert"><p><?=$msg?></p></div><?php break;
     case "info" : ?><div class="alert alert-info" role="alert"><p><?=$msg?></p></div><?php break;
     case "danger" : ?><div class="alert alert-danger" role="alert"><p><?=$msg?></p></div><?php break; 
   }  
-}
-?>
+} ?>
 <html>
 <body background="<?=base_url()?>images/bg.jpg">
 <head>
@@ -21,36 +19,30 @@ if(isset($msg)){
    <nav class="navbar navbar-default">
       <div class="container-fluid">
   <div class="navbar-header">
-    <a class="navbar-brand">Sistem Informasi Ujian Online Pemrograman</a>
+    <a class="navbar-brand">Online Programming Exam Information System</a>
   </div>
   <ul class="nav navbar-nav">
-    <!-- <li class="active"><a href="http://www.malasngoding.com">Home</a></li>
-    <li><a href="#">Profil</a></li>
-    <li><a href="#">Tentang Kami</a></li> 
-    <li><a href="#">Kontak</a></li>  -->
-    
-
-     <li><a href="<?=base_url()?>index.php/cujian/banksoal/all">Bank Soal</a></li> 
+     <li><a href="<?=base_url()?>index.php/cujian/banksoal/all">Question Bank</a></li> 
     <li class="dropdown">
-      <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Mata Kuliah
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Courses
       <span class="caret"></span></a>
       <ul class="dropdown-menu">
-        <button class="btn btn-default col-md-12" data-toggle="collapse" data-target="#tambah_web"  data-placement="top" title="Tambah Soal Web">Pemrograman Berbasis Web</button>
-          <button class="btn btn-default col-md-12" data-toggle="collapse" data-target="#tambah_mobile" data-tooltip="tooltip" data-placement="top" title="Tambah Soal Mobile">Pemrograman Berbasis Mobile</button></a>
+        <button class="btn btn-default col-md-12" data-toggle="collapse" data-target="#tambah_web"  data-placement="top" title="Tambah Soal Web">Web Programming</button>
+          <button class="btn btn-default col-md-12" data-toggle="collapse" data-target="#tambah_mobile" data-tooltip="tooltip" data-placement="top" title="Tambah Soal Mobile">Mobile Programming</button></a>
           
-          <button class="btn btn-default col-md-12" data-toggle="collapse" data-target="#tambah_jaringan" data-tooltip="tooltip" data-placement="top" title="Tambah Soal Jaringan">Pemrograman Jaringan Komputer</button></a>
+          <button class="btn btn-default col-md-12" data-toggle="collapse" data-target="#tambah_jaringan" data-tooltip="tooltip" data-placement="top" title="Tambah Soal Jaringan">Computer Network Programming</button></a>
           <br>
               <br>
-          <button class="btn btn-default col-md-12" data-toggle="collapse" data-target="#tambah_algoritma" data-tooltip="tooltip" data-placement="top" title="Tambah Soal Algoritma">Pemrograman Algoritma</button></a>
+          <button class="btn btn-default col-md-12" data-toggle="collapse" data-target="#tambah_algoritma" data-tooltip="tooltip" data-placement="top" title="Tambah Soal Algoritma">Algorithm Programming</button></a>
           <br>
               <br>
-          <button class="btn btn-default col-md-12" data-toggle="collapse" data-target="#tambah_basisdata" data-tooltip="tooltip" data-placement="top" title="Tambah Soal Basisdata">Pemrograman Database</button></a>
+          <button class="btn btn-default col-md-12" data-toggle="collapse" data-target="#tambah_basisdata" data-tooltip="tooltip" data-placement="top" title="Tambah Soal Basisdata">Database Programming</button></a>
           <br>
               <br>
-          <button class="btn btn-default col-md-12" data-toggle="collapse" data-target="#tambah_objek" data-tooltip="tooltip" data-placement="top" title="Tambah Soal Objek">Pemrograman Berorientasi objek</button></a>
+          <button class="btn btn-default col-md-12" data-toggle="collapse" data-target="#tambah_objek" data-tooltip="tooltip" data-placement="top" title="Tambah Soal Objek">Object Oriented Programming</button></a>
           <br>
               <br>
-          <button class="btn btn-default col-md-12" data-toggle="collapse" data-target="#tambah_gui" data-tooltip="tooltip" data-placement="top" title="Tambah Soal Gui">Pemrograman Berbasis GUI</button></a>
+          <button class="btn btn-default col-md-12" data-toggle="collapse" data-target="#tambah_gui" data-tooltip="tooltip" data-placement="top" title="Tambah Soal Gui">Graphical User Interface Programming</button></a>
         </div>
       </ul>
     </li>
@@ -75,8 +67,8 @@ if(isset($msg)){
       <?php }?>
         </div>
         <div class="btn-group-vertical">
-        <button class="btn btn-basic" data-toggle="collapse" data-target="#tambahpaket">Tambah Paket</button>
-        <button class="btn btn-basic" data-toggle="collapse" data-target="#hapuspaket">Hapus Paket</button>
+        <button class="btn btn-basic" data-toggle="collapse" data-target="#tambahpaket">New Packet</button>
+        <button class="btn btn-basic" data-toggle="collapse" data-target="#hapuspaket">Delete Packet</button>
     </div>
     <div class="btn-group-vertical">
     <button class="btn btn-basic" data-toggle="collapse" data-target="#importpaket">Import</button>
@@ -90,7 +82,7 @@ if(isset($msg)){
       <div class="panel-body">
         <div align="center">
         <div class="btn-group-vertical">
-        <button class="btn btn-info" data-toggle="collapse" data-target="#setupdate">Atur Update</button>
+        <button class="btn btn-info" data-toggle="collapse" data-target="#setupdate">Set Update</button>
         </div>
       </div>
     </div>
@@ -100,7 +92,7 @@ if(isset($msg)){
     <div class="collapse" id="setupdate">
       <div class="well form-group form-inline">
         <form action="<?=base_url()?>index.php/cujian/setupdate" method="POST">
-        <label for="pilihpaket">Pilih Paket</label>
+        <label for="pilihpaket">Choose Packet</label>
         <select class="form-control" name="paket" id="pilihpaket">
           <?php
           foreach($paket as $row){?>
@@ -125,7 +117,7 @@ if(isset($msg)){
        <div class="collapse col-md-14" id="hapuspaket">
       <div class="well form-group form-inline">
         <form action="<?=base_url()?>index.php/cujian/hapusPaket" method="POST">
-        <label for="pilihpaket">Pilih Paket</label>
+        <label for="pilihpaket">Choose Packet</label>
         <select class="form-control" name="paket" id="pilihpaket">
           <?php
           foreach($paket as $row){?>
@@ -152,7 +144,7 @@ if(isset($msg)){
   </div>
      <div class="collapse col-md-15" id="importpaket">
       <div class="well form-group form-inline">
-      <label for="pilihpaket">Pilih Paket</label>
+      <label for="pilihpaket">Choose Packet</label>
        
         <label for="Importfile">Import file Paket</label>
         <form action="<?php echo base_url();?>/index.php/excel/upload/" method="post" enctype="multipart/form-data">

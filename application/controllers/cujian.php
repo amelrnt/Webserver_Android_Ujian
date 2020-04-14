@@ -18,6 +18,16 @@
 
 class Cujian extends CI_Controller {
 
+    /**
+     * Controller For 
+     * route https://hostname/cujian/login
+     * 
+     * Static login 
+     * dimana hanya ada satu data yaitu :
+     * username : admin
+     * password : admin
+     * untuk dapat login.
+     */
     public function login() {
         if ($_POST) {
             $uname = $_POST['username'];
@@ -46,7 +56,7 @@ class Cujian extends CI_Controller {
                 $data['msg']=$param['msg'];
                 $data['alert']=$param['alert'];
                 $this->load->view('config');
-                $this->load->view('index',$data);
+                $this->load->view('index', $data);
                 $this->load->view('input_web');
                 $this->load->view('input_mobile');
                 $this->load->view('input_jaringan');
