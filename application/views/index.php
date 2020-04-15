@@ -10,7 +10,6 @@
 <html>
 <body background="<?=base_url()?>images/bg.jpg">
 <head>
-  <title>Bootstrap Part 12 : Membuat Navigation bar Bootstrap</title>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>

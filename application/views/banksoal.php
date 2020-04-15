@@ -1,7 +1,6 @@
 <html>
 <body background="<?=base_url()?>images/bg.jpg">
 <head>
-  <title>Bootstrap Part 12 : Membuat Navigation bar Bootstrap</title>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
@@ -10,7 +9,7 @@
    <nav class="navbar navbar-default">
       <div class="container-fluid">
   <div class="navbar-header">
-    <a class="navbar-brand">Sistem Informasi Ujian Online Pemrograman</a>
+    <a class="navbar-brand">Online Programming Exam Information System</a>
   </div>
   <ul class="nav navbar-nav">
     <!-- <li class="active"><a href="http://www.malasngoding.com">Home</a></li>
@@ -31,16 +30,16 @@
         </li> -->
     <!--   </div> -->
     <li class="dropdown">
-      <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Pilihan Soal
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Options
       <span class="caret"></span></a>
       <ul class="dropdown-menu">
-     <a href="<?=base_url()?>/index.php/cujian/banksoal/web"><button class="btn btn-default col-md-12" >Pemrograman Berbasis Web</button></a>
-        <a href="<?=base_url()?>/index.php/cujian/banksoal/mobile"><button class="btn btn-default col-md-12" >Pemrograman Berbasis Mobile</button></a>
-        <a href="<?=base_url()?>/index.php/cujian/banksoal/jaringan"><button class="btn btn-default col-md-12" >Pemrograman Jaringan Komputer</button></a>
-        <a href="<?=base_url()?>/index.php/cujian/banksoal/algoritma"><button class="btn btn-default col-md-12" >Pemrograman Algoritma</button></a>
-        <a href="<?=base_url()?>/index.php/cujian/banksoal/basisdata"><button class="btn btn-default col-md-12" >Pemrograman Basisdata</button></a>
-        <a href="<?=base_url()?>/index.php/cujian/banksoal/objek"><button class="btn btn-default col-md-12" >Pemrograman Berorientasi Objek</button></a>
-          <a href="<?=base_url()?>/index.php/cujian/banksoal/gui"><button class="btn btn-default col-md-12" >Pemrograman Berbasis Gui</button></a>
+     <a href="<?=base_url()?>/index.php/cujian/banksoal/web"><button class="btn btn-default col-md-12" >Web Programming</button></a>
+        <a href="<?=base_url()?>/index.php/cujian/banksoal/mobile"><button class="btn btn-default col-md-12" >Mobile Programming</button></a>
+        <a href="<?=base_url()?>/index.php/cujian/banksoal/jaringan"><button class="btn btn-default col-md-12" >Computer Network Programming</button></a>
+        <a href="<?=base_url()?>/index.php/cujian/banksoal/algoritma"><button class="btn btn-default col-md-12" >Algorithm Programming</button></a>
+        <a href="<?=base_url()?>/index.php/cujian/banksoal/basisdata"><button class="btn btn-default col-md-12" >Database Programming</button></a>
+        <a href="<?=base_url()?>/index.php/cujian/banksoal/objek"><button class="btn btn-default col-md-12" >Object Oriented Programming</button></a>
+          <a href="<?=base_url()?>/index.php/cujian/banksoal/gui"><button class="btn btn-default col-md-12" >Graphical User Interface Programming</button></a>
 
       </ul>
     </li>
@@ -50,14 +49,14 @@
      <table class="table table-hover table-striped">
           <tr>
           <th>#</th>
-          <th>Soal</th>
-          <th>Pilihan A</th>
-          <th>Pilihan B</th>
-          <th>Pilihan C</th>
-          <th>Pilihan D</th>
-          <th>kategori</th>
-          <th>Paket</th>
-          <th>Aksi</th>
+          <th>Question</th>
+          <th>Option A</th>
+          <th>Option B</th>
+          <th>Option C</th>
+          <th>Option D</th>
+          <th>Category</th>
+          <th>Packet</th>
+          <th>Action</th>
         </tr>
           <?php
           $no=1;
