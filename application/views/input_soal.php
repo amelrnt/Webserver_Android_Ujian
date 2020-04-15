@@ -1,7 +1,7 @@
 <body>
 	<div class="col-md-3">
 	</div>
-<form class="col-md-6" action="<?=base_url()?>index.php/cujian/input" method="POST">
+<form class="col-md-6" action="<?=base_url()?>cujian/input" method="POST">
 <div class="form-group">
     <label for="pertanyaan">Pertanyaan</label>
     <input type="text" class="form-control" id="pertanyaan" name="pertanyaan" placeholder="">

@@ -18,7 +18,7 @@
     <li><a href="#">Kontak</a></li>  -->
     
 
-     <li><a href="<?=base_url()?>/index.php/cujian">Home</a></li>
+     <li><a href="<?=base_url()?>cujian">Home</a></li>
      <li class="dropdown">
      <!-- <a class="dropdown-toggle" data-toggle="dropdown" href="#">file excel
       <span class="caret"></span></a> -->
@@ -33,13 +33,13 @@
       <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Options
       <span class="caret"></span></a>
       <ul class="dropdown-menu">
-     <a href="<?=base_url()?>/index.php/cujian/banksoal/web"><button class="btn btn-default col-md-12" >Web Programming</button></a>
-        <a href="<?=base_url()?>/index.php/cujian/banksoal/mobile"><button class="btn btn-default col-md-12" >Mobile Programming</button></a>
-        <a href="<?=base_url()?>/index.php/cujian/banksoal/jaringan"><button class="btn btn-default col-md-12" >Computer Network Programming</button></a>
-        <a href="<?=base_url()?>/index.php/cujian/banksoal/algoritma"><button class="btn btn-default col-md-12" >Algorithm Programming</button></a>
-        <a href="<?=base_url()?>/index.php/cujian/banksoal/basisdata"><button class="btn btn-default col-md-12" >Database Programming</button></a>
-        <a href="<?=base_url()?>/index.php/cujian/banksoal/objek"><button class="btn btn-default col-md-12" >Object Oriented Programming</button></a>
-          <a href="<?=base_url()?>/index.php/cujian/banksoal/gui"><button class="btn btn-default col-md-12" >Graphical User Interface Programming</button></a>
+     <a href="<?=base_url()?>cujian/banksoal/web"><button class="btn btn-default col-md-12" >Web Programming</button></a>
+        <a href="<?=base_url()?>cujian/banksoal/mobile"><button class="btn btn-default col-md-12" >Mobile Programming</button></a>
+        <a href="<?=base_url()?>cujian/banksoal/jaringan"><button class="btn btn-default col-md-12" >Computer Network Programming</button></a>
+        <a href="<?=base_url()?>cujian/banksoal/algoritma"><button class="btn btn-default col-md-12" >Algorithm Programming</button></a>
+        <a href="<?=base_url()?>cujian/banksoal/basisdata"><button class="btn btn-default col-md-12" >Database Programming</button></a>
+        <a href="<?=base_url()?>cujian/banksoal/objek"><button class="btn btn-default col-md-12" >Object Oriented Programming</button></a>
+          <a href="<?=base_url()?>cujian/banksoal/gui"><button class="btn btn-default col-md-12" >Graphical User Interface Programming</button></a>
 
       </ul>
     </li>
@@ -73,22 +73,22 @@
           <td>
                <div class="btn-group-vertical" role="group">
                     <?php if($row['kategori']==1){?>
-                         <a href="<?=base_url()?>index.php/cujian/editsoal/1/<?=$row['id']?>"><button class="btn btn-danger fa fa-pencil-square-o"></button>
+                         <a href="<?=base_url()?>cujian/editsoal/1/<?=$row['id']?>"><button class="btn btn-danger fa fa-pencil-square-o"></button>
                     <?php }else if($row['kategori']==2){?>
-                         <a href="<?=base_url()?>index.php/cujian/editsoal/2/<?=$row['id']?>"><button class="btn btn-danger fa fa-pencil-square-o" data-toggle="modal" data-target="#edits<?=$row['id']?>"></button>
+                         <a href="<?=base_url()?>cujian/editsoal/2/<?=$row['id']?>"><button class="btn btn-danger fa fa-pencil-square-o" data-toggle="modal" data-target="#edits<?=$row['id']?>"></button>
                     <?php }else if($row['kategori']==3){ ?>
-                         <a href="<?=base_url()?>index.php/cujian/editsoal/3/<?=$row['id']?>"><button class="btn btn-danger fa fa-pencil-square-o" data-toggle="modal" data-target="#editr<?=$row['id']?>"></button>
+                         <a href="<?=base_url()?>cujian/editsoal/3/<?=$row['id']?>"><button class="btn btn-danger fa fa-pencil-square-o" data-toggle="modal" data-target="#editr<?=$row['id']?>"></button>
                     <?php }else if($row['kategori']==4){ ?>
-                         <a href="<?=base_url()?>index.php/cujian/editsoal/4/<?=$row['id']?>"><button class="btn btn-danger fa fa-pencil-square-o" data-toggle="modal" data-target="#editr<?=$row['id']?>"></button>
+                         <a href="<?=base_url()?>cujian/editsoal/4/<?=$row['id']?>"><button class="btn btn-danger fa fa-pencil-square-o" data-toggle="modal" data-target="#editr<?=$row['id']?>"></button>
                     <?php }else if($row['kategori']==5){ ?>
-                         <a href="<?=base_url()?>index.php/cujian/editsoal/5/<?=$row['id']?>"><button class="btn btn-danger fa fa-pencil-square-o" data-toggle="modal" data-target="#editr<?=$row['id']?>"></button>
+                         <a href="<?=base_url()?>cujian/editsoal/5/<?=$row['id']?>"><button class="btn btn-danger fa fa-pencil-square-o" data-toggle="modal" data-target="#editr<?=$row['id']?>"></button>
                     <?php }else if($row['kategori']==6){ ?>
-                         <a href="<?=base_url()?>index.php/cujian/editsoal/6/<?=$row['id']?>"><button class="btn btn-danger fa fa-pencil-square-o" data-toggle="modal" data-target="#editr<?=$row['id']?>"></button>
+                         <a href="<?=base_url()?>cujian/editsoal/6/<?=$row['id']?>"><button class="btn btn-danger fa fa-pencil-square-o" data-toggle="modal" data-target="#editr<?=$row['id']?>"></button>
                     <?php }else if($row['kategori']==7){ ?>
-                         <a href="<?=base_url()?>index.php/cujian/editsoal/7/<?=$row['id']?>"><button class="btn btn-danger fa fa-pencil-square-o" data-toggle="modal" data-target="#editr<?=$row['id']?>"></button>
+                         <a href="<?=base_url()?>cujian/editsoal/7/<?=$row['id']?>"><button class="btn btn-danger fa fa-pencil-square-o" data-toggle="modal" data-target="#editr<?=$row['id']?>"></button>
                              
                     <?php } ?>
-                    <a href="<?=base_url()?>index.php/cujian/hapussoal/<?=$row['id']?>"><button class="btn btn-danger fa fa-trash-o"></button></a>
+                    <a href="<?=base_url()?>cujian/hapussoal/<?=$row['id']?>"><button class="btn btn-danger fa fa-trash-o"></button></a>
                </div>
           </td>
           </tr>         

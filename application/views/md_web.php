@@ -6,7 +6,7 @@
       <h3 class="panel-title text-center"><strong>Edit Soal Pemrograman Web</strong></h3>
       </div>
   	<div class="modal-body">
-    <form action="<?=base_url()?>index.php/cujian/editsoal/1/<?=$id?>" method="POST" enctype="multipart/form-data">
+    <form action="<?=base_url()?>cujian/editsoal/1/<?=$id?>" method="POST" enctype="multipart/form-data">
       <div class="form-group">
         <label for="pilihpaket">Pilih Paket</label>
         <select class="form-control" name="paket" id="pilihpaket">

@@ -3,7 +3,7 @@
   
   </div>
     <div class="container col-md-3">
-      <form class="form-signin" action="<?=base_url()?>index.php/cujian/login" method="POST">
+      <form class="form-signin" action="<?=base_url()?>cujian/login" method="POST">
         <h2 class="form-signin-heading"></h2>
         <center><h3> Welcome Admin</h3></center>
         <label for="inputEmail" class="sr-only">Username</label>
