@@ -36,7 +36,7 @@ class Cujian extends CI_Controller {
             if($check) {
                 $array = array('akses' => 1);
                 $this->session->set_userdata($array);
-                $this->index();
+                $this->home();
             }
         } else {
             $this->load->view('config');
@@ -44,7 +44,13 @@ class Cujian extends CI_Controller {
         }
     }
     
-	public function index($param = null) {
+	public function index() {
+		$this->load->view('config2');
+		$this->load->view('landing_page');
+	}
+
+	public function home($param = null)
+	{
 		if( $this->session->userdata('akses')== FALSE) {
 			$this->login();
 		} else {
@@ -263,7 +269,7 @@ class Cujian extends CI_Controller {
 			$this->adminmod->tambahData("tbl_soal",$data);
 			$data['msg']="Soal berhasil ditambahkan.";
 			$data['alert']="success";
-			$this->index($data);
+			$this->home($data);
 
 		}
 	}
@@ -324,7 +330,7 @@ class Cujian extends CI_Controller {
 			$this->adminmod->tambahData('tbl_paket',$data);
 			$data['msg']="Paket berhasil dibuat.";
 			$data['alert']="success";
-			$this->index($data);
+			$this->home($data);
 			redirect('http://localhost:8080/Webserver_Android_Ujian/');
 		}
 	}
@@ -332,7 +338,7 @@ class Cujian extends CI_Controller {
 	function sukses(){
 		$data['msg']="Import Berhasil";
 		$data['alert']="success";
-		$this->index($data);
+		$this->home($data);
 	}
 
 	public function editsoal($kategori,$id){
@@ -511,7 +517,7 @@ class Cujian extends CI_Controller {
             $this->adminmod->updateData('tbl_soal','id',$id,$data);
                 $data['msg']="Soal berhasil di edit.";
                 $data['alert']="success";
-                $this->index($data);
+                $this->home($data);
                 redirect(base_url('index.php/cujian/banksoal/all'));
         }
         
@@ -542,7 +548,7 @@ class Cujian extends CI_Controller {
 		$this->adminmod->hapusData('tbl_soal','id',$id);
 		$data['msg']="Soal dihapus.";
 		$data['alert']="danger";
-		$this->index($data);
+		$this->home($data);
 	}
 
 	public function hapusPaket(){
@@ -554,7 +560,7 @@ class Cujian extends CI_Controller {
 			$this->adminmod->hapusData("tbl_paket","paket",$idpkt);
 			$data['msg']="Data berhasil di hapus.";
 			$data['alert']="success";
-			$this->index($data);
+			$this->home($data);
 		}
 	}
 
@@ -568,14 +574,40 @@ class Cujian extends CI_Controller {
 		$this->adminmod->updateData('tbl_versi','id_ver','1',$data);
 		$data['msg']="Update berhasil di atur.";
 		$data['alert']="success";
-		$this->index($data);	
+		$this->home($data);	
 		}
+	}
+
+	public function exam()
+	{
+		$this->load->model('adminmod');
+		// TODO add filter later if necessary
+		$data['exam']=$this->adminmod->tampilData('tbl_final_exam');
+		$this->load->view('config');
+		$this->load->view('exam',$data);
+	}
+
+	public function hasil()
+	{
+		$this->load->model('adminmod');
+		//$data['data']= $this->adminmod->joinData('tbl_final_exam','tbl_nilai_exam','id_nilai_exam');
+		$data['res']= $this->adminmod->joinExam();
+		// TODO add filter later if necessary
+		$this->load->view('config');
+		$this->load->view('exam_result',$data);
 	}
 
 	public function logout(){
 		$this->session->sess_destroy();
 		$this->login();
 	}
+	
+
+	// public function ujian()
+	// {
+	// 	$this->load->view('bankujian');
+	// }
+
 }
 
 /* End of file welcome.php */

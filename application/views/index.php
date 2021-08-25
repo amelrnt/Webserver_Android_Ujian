@@ -22,7 +22,9 @@
   </div>
   <ul class="nav navbar-nav">
      <li><a href="<?=base_url()?>cujian/banksoal/all">Question Bank</a></li> 
-    <li class="dropdown">
+     <li><a href="<?=base_url()?>cujian/exam">New Exam</a></li> 
+     <li><a href="<?=base_url()?>cujian/hasil">Exam result</a></li> 
+     <li class="dropdown">
       <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Courses
       <span class="caret"></span></a>
       <ul class="dropdown-menu">
@@ -44,7 +46,8 @@
           <button class="btn btn-default col-md-12" data-toggle="collapse" data-target="#tambah_gui" data-tooltip="tooltip" data-placement="top" title="Tambah Soal Gui">Graphical User Interface Programming</button></a>
         </div>
       </ul>
-    </li>
+     </li>
+     
   </ul>
 </ul>
 

@@ -18,7 +18,7 @@
     <li><a href="#">Kontak</a></li>  -->
     
 
-     <li><a href="<?=base_url()?>cujian">Home</a></li>
+     <li><a href="<?=base_url()?>cujian/home">Home</a></li>
      <li class="dropdown">
      <!-- <a class="dropdown-toggle" data-toggle="dropdown" href="#">file excel
       <span class="caret"></span></a> -->
@@ -48,16 +48,16 @@
 <div class="col-md-12">
      <table class="table table-hover table-striped">
           <tr>
-          <th>#</th>
-          <th>Question</th>
-          <th>Option A</th>
-          <th>Option B</th>
-          <th>Option C</th>
-          <th>Option D</th>
-          <th>Category</th>
-          <th>Packet</th>
-          <th>Action</th>
-        </tr>
+               <th>#</th>
+               <th>Question</th>
+               <th>Option A</th>
+               <th>Option B</th>
+               <th>Option C</th>
+               <th>Option D</th>
+               <th>Category</th>
+               <th>Packet</th>
+               <th>Action</th>
+          </tr>
           <?php
           $no=1;
           foreach ($soal as $row) {?>

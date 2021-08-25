@@ -15,6 +15,7 @@
 |
 */
 $config['base_url']	= getenv('APP_URL');
+//$config['base_url']	= 'http://localhost:8080/Webserver_Android_Ujian/';
 
 /*
 |--------------------------------------------------------------------------

@@ -12,6 +12,22 @@ class Adminmod extends CI_Model{
         return $query->result_array();
     }
 
+    public function joinData($mainTable,$joinTable,$key)
+    {
+        $this->db->select()->from($mainTable);
+        $this->db->join($joinTable, $mainTable+'.id'+' ='+ $joinTable+'.'+$key);
+        $query=$this->db->get();
+        return $query->result_array();
+    }
+
+    public function joinExam()
+    {
+        $this->db->select('')->from('tbl_final_exam');
+        $this->db->join('tbl_nilai_exam', 'tbl_final_exam.id = tbl_nilai_exam.id_nilai_exam');
+        $query = $this->db->get();
+        return $query->result_array();
+    }
+
     function dataFilter($namaTabel,$where){
         $this->db->select()->from($namaTabel)->where($where);
         $query=$this->db->get();
