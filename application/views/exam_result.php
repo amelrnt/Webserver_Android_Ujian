@@ -61,7 +61,7 @@
           <tr>
           <td><?=$no?></td>
           <td><?=$row['nama']?></td>
-          <td><?=$row['nama']?></td>
+          <td><?=$row['nama_exam']?></td>
           <td><?=$row['nilai']?></td>
           <td><?=$row['waktu_mulai']?></td>
           <td><?=$row['waktu_mulai']?></td>

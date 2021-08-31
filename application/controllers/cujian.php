@@ -581,7 +581,6 @@ class Cujian extends CI_Controller {
 	public function exam()
 	{
 		$this->load->model('adminmod');
-		// TODO add filter later if necessary
 		$data['exam']=$this->adminmod->tampilData('tbl_final_exam');
 		$this->load->view('config');
 		$this->load->view('exam',$data);
@@ -592,9 +591,59 @@ class Cujian extends CI_Controller {
 		$this->load->model('adminmod');
 		//$data['data']= $this->adminmod->joinData('tbl_final_exam','tbl_nilai_exam','id_nilai_exam');
 		$data['res']= $this->adminmod->joinExam();
-		// TODO add filter later if necessary
 		$this->load->view('config');
 		$this->load->view('exam_result',$data);
+	}
+
+	public function start()
+	{
+		$this->load->view('config');
+		$this->load->view('exam_start');
+	}
+
+	public function addExam($param){
+		$this->load->model('adminmod');
+	$data['paket']=$this->adminmod->ambilPaket();
+	if($param=="all") {
+					$data['soal']=$this->adminmod->tampilData('tbl_soal');
+					$this->load->view('config');
+					$this->load->view('exam_add',$data);
+	} else if ($param=="web") {
+		$where=array('kategori'=>1);
+		$data['soal']=$this->adminmod->dataFilter('tbl_soal',$where);
+		$this->load->view('config');
+		$this->load->view('exam_add',$data);
+	} else if ($param=="mobile") {
+		$where=array('kategori'=>2);
+		$data['soal']=$this->adminmod->dataFilter('tbl_soal',$where);
+		$this->load->view('config');
+		$this->load->view('exam_add',$data);
+	} else if ($param=="jaringan") {
+		$where=array('kategori'=>3);
+		$data['soal']=$this->adminmod->dataFilter('tbl_soal',$where);
+		$this->load->view('config');
+		$this->load->view('exam_add',$data);
+	} else if ($param=="algoritma") {
+		$where=array('kategori'=>4);
+		$data['soal']=$this->adminmod->dataFilter('tbl_soal',$where);
+		$this->load->view('config');
+		$this->load->view('exam_add',$data);
+	} else if ($param=="basisdata") {
+		$where=array('kategori'=>5);
+		$data['soal']=$this->adminmod->dataFilter('tbl_soal',$where);
+		$this->load->view('config');
+		$this->load->view('exam_add',$data);
+	} else if ($param=="objek") {
+		$where=array('kategori'=>6);
+		$data['soal']=$this->adminmod->dataFilter('tbl_soal',$where);
+		$this->load->view('config');
+		$this->load->view('exam_add',$data);
+	}else if($param=="gui"){
+		$where=array('kategori'=>7);
+		$data['soal']=$this->adminmod->dataFilter('tbl_soal',$where);
+		$this->load->view('config');
+		$this->load->view('exam_add',$data);
+		}
 	}
 
 	public function logout(){
